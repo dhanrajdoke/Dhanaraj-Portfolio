@@ -1,0 +1,555 @@
+﻿@model Portfolio.Models.ContactModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<section id="home" class="hero" data-aos="fade-up">
+
+    <div class="blur-circle one"></div>
+    <div class="blur-circle two"></div>
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <h4>Hello, I'm</h4>
+
+                <h1>Dhanaraj Doke</h1>
+
+                <h2>
+                    <span id="typing"></span>
+                </h2>
+
+                <p>
+                    I build modern web applications using ASP.NET MVC,
+                    ASP.NET Core, Web API and SQL Server.
+                </p>
+
+                <a href="#contact" class="btn btn-primary btn-lg me-3">
+                    Hire Me
+                </a>
+
+                <a href="~/resume/Dhanraj Doke_Resume.pdf"
+                   class="btn btn-outline-light btn-lg"
+                   download
+                   onclick="downloadResume()">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+                
+
+                <div class="social-icons mt-4">
+
+                    <a href="https://github.com/YourGitHub" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/dhanraj-doke-7b7476228?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/dhanraj_doke_0_0?igsh=MTh3M2hsbW96Zm0wYg==" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-6 text-center">
+
+                <img src="~/images/dhanaraj.png"
+                     alt="Dhanaraj Doke"
+                     class="profile-image img-fluid">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="about" class="about" data-aos="fade-right">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-5 text-center">
+
+                <img src="~/images/profile.png"
+                     class="about-image img-fluid" />
+
+            </div>
+
+            <div class="col-lg-7">
+
+                <h5 class="section-title">ABOUT ME</h5>
+
+                <h2>Who Am I?</h2>
+
+                <p>
+                    Hello! I'm <strong>Dhanaraj Doke</strong>, a passionate
+                    .NET Full Stack Developer with experience in building
+                    modern web applications using ASP.NET Core, ASP.NET MVC,
+                    Web API, SQL Server, HTML, CSS, Bootstrap and JavaScript.
+                </p>
+
+                <p>
+                    I enjoy solving real-world business problems, developing
+                    scalable applications, and continuously learning new
+                    technologies.
+                </p>
+
+                <div class="row mt-4">
+
+                    <div class="col-md-6">
+                        <h6><strong>Name :</strong> Dhanaraj Doke</h6>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h6><strong>Email :</strong> dhanarajdoke10@gmail.com</h6>
+                    </div>
+
+                    <div class="col-md-6 mt-3">
+                        <h6><strong>Location :</strong> Maharashtra, India</h6>
+                    </div>
+
+                    <div class="col-md-6 mt-3">
+                        <h6><strong>Experience :</strong> .NET Developer</h6>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="skills" class="skills" data-aos="zoom-in">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <h5 class="section-title">MY SKILLS</h5>
+            <h2>Technical Skills</h2>
+            <p>I specialize in Microsoft Technologies and Modern Web Development.</p>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-6">
+
+                <div class="skill-item">
+                    <div class="d-flex justify-content-between">
+                        <span>C#</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width:95%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="d-flex justify-content-between">
+                        <span>ASP.NET Core</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width:90%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="d-flex justify-content-between">
+                        <span>ASP.NET MVC</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width:90%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="d-flex justify-content-between">
+                        <span>Web API</span>
+                        <span>88%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width:88%"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+
+                <div class="skill-item">
+                    <div class="d-flex justify-content-between">
+                        <span>SQL Server</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width:90%"></div>
+                    </div>
+                </div>
+
+                <!-- Combined Frontend Skills -->
+                <div class="skill-item">
+                    <div class="d-flex justify-content-between">
+                        <span>HTML • CSS • Bootstrap</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width:90%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="d-flex justify-content-between">
+                        <span>JavaScript & jQuery</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width:85%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="d-flex justify-content-between">
+                        <span>React.js (Basic)</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width:60%"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="projects" class="projects" data-aos="fade-left">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <h5 class="section-title">MY PROJECTS</h5>
+            <h2>Featured Projects</h2>
+            <p>Some of my recent work built using Microsoft Technologies.</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+
+            <!-- Project 1 -->
+            <div class="col-lg-4 col-md-6">
+
+                <div class="project-card">
+
+                    <img src="~/images/inventory.png" class="img-fluid project-img" />
+
+                    <div class="p-4">
+
+                        <h4>Inventory Management System</h4>
+
+                        <p>
+                            Inventory management system with Purchase,
+                            Sales, Stock Reports and Role Based Login.
+                        </p>
+
+                        <div class="tech-stack">
+                            <span>ASP.NET MVC</span>
+                            <span>Web API</span>
+                            <span>SQL Server</span>
+                        </div>
+
+                        <div class="mt-4">
+
+                            <a href="#" class="btn btn-primary btn-sm">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Project 2 -->
+          
+            <div class="col-lg-4 col-md-6">
+
+                <div class="project-card">
+
+                    <img src="~/images/erp.png" class="img-fluid project-img" />
+
+                    <div class="p-4">
+
+                        <h4>Standard Metals ERP</h4>
+
+                        <p>
+                            ERP system including Item, Supplier,
+                            Customer, Indent and Email modules.
+                        </p>
+
+                        <div class="tech-stack">
+                            <span>ASP.NET MVC</span>
+                            <span>Web API</span>
+                            <span>SQL Server</span>
+                        </div>
+
+                        <div class="mt-4">
+
+                            <a href="#" class="btn btn-primary btn-sm">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="experience" class="experience">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <h5 class="section-title">MY JOURNEY</h5>
+            <h2>Experience & Education</h2>
+            <p>My professional journey and educational background.</p>
+        </div>
+
+        <div class="timeline">
+
+            <!-- Experience -->
+            <div class="timeline-item">
+
+                <div class="timeline-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-year">2024 - Present</span>
+
+                    <h4>.NET Full Stack Developer</h4>
+
+                    <h6>Current Organization</h6>
+
+                    <p>
+                        Developing enterprise web applications using
+                        ASP.NET MVC, ASP.NET Core, Web API, SQL Server,
+                        JavaScript, jQuery and Bootstrap.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Education -->
+            <div class="timeline-item">
+
+                <div class="timeline-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-year">Bachelor's Degree</span>
+
+                    <h4>Bachelor of Computer Science</h4>
+
+                    <h6>College Of Computer Application And Technology Latur Maharashtra</h6>
+
+                    <p>
+                        Built a strong foundation in programming,
+                        databases, networking and software development.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact" class="contact" data-aos="fade-up">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <h5 class="section-title">CONTACT ME</h5>
+            <h2>Let's Work Together</h2>
+            <p>Have a project in mind? Feel free to contact me.</p>
+        </div>
+
+      
+
+        <div class="row">
+
+            <!-- Left Side -->
+            <div class="col-lg-5">
+
+                <div class="contact-info">
+
+                    <div class="contact-box">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h5>Email</h5>
+                            <p>dhanarajdoke10@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-box">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h5>Phone</h5>
+                            <p>+91 8530695082</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-box">
+                        <i class="fas fa-location-dot"></i>
+                        <div>
+                            <h5>Location</h5>
+                            <p>Maharashtra, India</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Right Side -->
+            <div class="col-lg-7">
+
+                <form asp-controller="Home"
+                      asp-action="Send"
+                      method="post">
+
+                    <div class="row">
+
+                        <div class="col-md-6 mb-3">
+                            <input asp-for="FullName" class="form-control" placeholder="Your Name" />
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <input asp-for="Email" class="form-control" placeholder="Your Email" />
+                        </div>
+
+                    </div>
+
+                    <div class="mb-3">
+                        <input asp-for="Subject" class="form-control" placeholder="Subject" />
+                    </div>
+
+                    <div class="mb-3">
+                        <textarea asp-for="Message"
+                                  class="form-control"
+                                  rows="6"
+                                  placeholder="Message"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-lg">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+@section Scripts {
+
+    @if (TempData["Success"] != null)
+    {
+        <script>
+            Swal.fire({
+                icon: 'success',
+                title: 'Message Sent!',
+                text: '@TempData["Success"]',
+                timer: 2000,
+                showConfirmButton: false
+            });
+        </script>
+    }
+
+    @if (TempData["Error"] != null)
+    {
+        <script>
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: '@TempData["Error"]',
+                confirmButtonColor: '#ef4444'
+            });
+        </script>
+    }
+
+    <script>
+
+        function downloadResume() {
+
+            Swal.fire({
+                icon: 'success',
+                title: 'Download Started',
+                text: 'Your resume is downloading...',
+                timer: 1500,
+                showConfirmButton: false
+            });
+
+        }
+
+    </script>
+}
+
+
+<footer class="footer">
+
+    <div class="container text-center">
+
+        <div class="footer-social mb-3">
+
+            <a href="#"><i class="fab fa-github"></i></a>
+
+            <a href="https://www.linkedin.com/in/dhanraj-doke-7b7476228?utm_source=share_via&utm_content=profile&utm_medium=member_android"><i class="fab fa-linkedin"></i></a>
+
+            <a href="https://www.instagram.com/dhanraj_doke_0_0?igsh=MTh3M2hsbW96Zm0wYg=="><i class="fab fa-instagram"></i></a>
+
+        </div>
+
+        <p>
+            © 2026 Dhanaraj Doke | All Rights Reserved
+        </p>
+
+    </div>
+
+</footer>
