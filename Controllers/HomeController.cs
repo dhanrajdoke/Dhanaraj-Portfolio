@@ -51,7 +51,7 @@ namespace Portfolio.Controllers
                 // Gmail Address
                 mail.From = new MailAddress("dhanarajdoke10@gmail.com");
 
-                // Mail कुठे receive होईल
+                // Mail  receive 
                 mail.To.Add("dhanarajdoke10@gmail.com");
 
                 mail.Subject = "Portfolio Contact - " + model.Subject;
