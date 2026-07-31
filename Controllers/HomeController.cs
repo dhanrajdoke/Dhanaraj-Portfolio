@@ -108,7 +108,12 @@ namespace Portfolio.Controllers
             }
             catch (Exception ex)
             {
-                TempData["Error"] = ex.Message;
+                return Json(new
+                {
+                    success = false,
+                    error = ex.Message,
+                    inner = ex.InnerException?.Message
+                });
             }
 
             return RedirectToAction("Index");
