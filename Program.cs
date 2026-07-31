@@ -1,12 +1,11 @@
-using Portfolio.Models;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.Configure<EmailSettings>(
-builder.Configuration.GetSection("EmailSettings"));
+
 
 var app = builder.Build();
 
