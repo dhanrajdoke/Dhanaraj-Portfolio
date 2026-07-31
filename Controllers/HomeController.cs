@@ -93,12 +93,17 @@ namespace Portfolio.Controllers
                     $"Message :\n{model.Message}";
 
 
-                SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
+                SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587)
+                {
+                    EnableSsl = true,
+                    UseDefaultCredentials = false,
+                    Credentials = new NetworkCredential(
+        Environment.GetEnvironmentVariable("EMAIL_USERNAME"),
+        Environment.GetEnvironmentVariable("EMAIL_PASSWORD")
+    ),
+                    Timeout = 30000 // 30 seconds
+                };
 
-                smtp.Credentials = new NetworkCredential(
-                    Environment.GetEnvironmentVariable("EMAIL_USERNAME"),
-                    Environment.GetEnvironmentVariable("EMAIL_PASSWORD")
-                );
 
                 smtp.EnableSsl = true;
 
